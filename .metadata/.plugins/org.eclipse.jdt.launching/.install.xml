@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dirs>
+    <entry loc="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_25.0.4.v20260826-0822" stamp="1788426950000"/>
+    <entry loc="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home" stamp="1708058487196"/>
+    <entry loc="/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home" stamp="1721987036506"/>
+    <entry loc="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home" stamp="1697632045000"/>
+    <entry loc="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_25.0.4.v20260826-0822/jre" stamp="1788426950000"/>
+    <entry loc="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home" stamp="1774857529000"/>
+</dirs>
