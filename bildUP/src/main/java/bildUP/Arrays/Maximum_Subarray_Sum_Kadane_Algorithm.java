@@ -1,0 +1,39 @@
+package bildUP.Arrays;
+
+public class Maximum_Subarray_Sum_Kadane_Algorithm {
+
+	public static void main(String[] args) {
+		int a[]= {1,-2,3,45,3,-523,5};
+		maxSub(a);
+		maxSub2(a);
+
+	}
+
+	private static void maxSub2(int[] a) {
+		int maxSum=0;
+		int currentSum=0;
+		for(int A:a) {
+			currentSum+=A;
+			currentSum = Math.max(A, currentSum);
+			maxSum=Math.max(maxSum, currentSum);
+		}
+		System.out.println(maxSum);
+		
+	}
+
+	private static void maxSub(int[] a) {
+		int maxSum=0;
+		int currentSum=0;
+		
+		for(int  i =0;i<a.length;i++) {
+			currentSum=currentSum+a[i];
+			if(currentSum<0) {
+				currentSum=0;
+			}
+			maxSum= Math.max(maxSum, currentSum);
+		}
+		System.out.println(maxSum);
+		
+	}
+
+}

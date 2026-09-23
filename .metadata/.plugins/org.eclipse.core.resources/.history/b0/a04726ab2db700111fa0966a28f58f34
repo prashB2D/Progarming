@@ -1,0 +1,10 @@
+package bildUP.Arrays;
+
+public class FindIntersectionofTwoArrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

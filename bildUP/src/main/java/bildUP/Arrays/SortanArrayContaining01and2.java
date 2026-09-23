@@ -1,0 +1,41 @@
+package bildUP.Arrays;
+
+import java.util.Arrays;
+
+public class SortanArrayContaining01and2 {
+
+	public static void main(String[] args) {
+		int a[]= {1,0,2,1,0,2,2};
+		order(a);
+		
+	
+	}
+
+	private static void order(int[] a) {
+		int st=0;
+		int mid=0;
+		int end=a.length-1;
+		while(mid<=end) {
+			if(a[mid]==0) {
+				int t =a[mid];
+				a[mid]=a[st];
+				a[st]=t;
+				mid++;
+				st++;
+			}else if(a[mid]==1) {
+				mid++;
+			}else if(a[mid]==2){
+				int t =a[mid];
+				a[mid]=a[end];
+				a[end]=t;
+			
+				end--;
+			}
+		}
+		Arrays.stream(a).forEach(v->System.out.print(v));
+		
+		
+		
+	}
+
+}

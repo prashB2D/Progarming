@@ -1,0 +1,26 @@
+package bildUP.Arrays;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+public class RemoveDuplicatesfromaSortedArray {
+
+	public static void main(String[] args) {
+		int a[]= {2,4,24,56,3,5,34,6};
+		Arrays.sort(a);
+		dupRem(a);
+
+	}
+
+	private static int[] dupRem(int[] a) {
+		Set<Integer> s = new HashSet<Integer>();
+		for(int A:a) {
+			s.add(A);
+		}
+		
+		return (int[]) s.toArray();
+		
+	}
+
+}

@@ -1,0 +1,62 @@
+package bildUP.Arrays;
+
+import java.util.Arrays;
+import java.util.TreeSet;
+
+public class MergeTwoSortedArrays {
+
+	public static void main(String[] args) {
+		int a[]= {2,34,5,3,24,345};
+		int b[]= {3,4,56,1,3,5};
+		Arrays.sort(a);
+		Arrays.sort(b);
+//		mergeArr(a,b);
+		mergeArr2(a,b);
+
+	}
+
+	private static void mergeArr2(int[] a, int[] b) {
+		int c[] = new int[a.length+b.length];
+		int l1=0;
+		int l2=0;
+		int i=0;
+		while(l1<a.length  && l2<b.length) {
+			if(a[l1]>=b[l2]) {
+				c[i]=a[l2];
+				l2++;
+				i++;
+			}else {
+				c[i]=b[l1];
+				l1++;
+				i++;
+			}
+		}
+		while(l1<a.length) {
+			c[i]=b[l1];
+			l1++;
+			i++;
+		}
+		while(l2<b.length) {
+			c[i]=a[l2];
+			l2++;
+			i++;
+		}
+		
+		for(int A:c) {
+			System.out.print(A+" ");
+		}
+		
+	}
+
+	private static void mergeArr(int[] a, int[] b) {
+		TreeSet<Integer> te = new TreeSet<Integer>();
+		for(int A:a) {
+			te.add(A);
+		}
+		for(int A:b) {
+			te.add(A);
+		}
+		te.stream().forEach(v->System.out.print(v+" "));
+	}
+
+}
