@@ -21,6 +21,7 @@ public class FirstOccurrenceofanElement {
 			}else if (arr[mid]>target) {
 				end=mid-1;
 			}else {
+				// this end sec conadtion 
 				st=mid+1;
 			}
 		}
